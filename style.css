@@ -1,9 +1,13 @@
 /* fonts */
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* site colour palette */
 :root {
-    --color: 
+    --blue: #8acdea;
+    --red: #e63946;
+    --yellow: #fcf300;
+    --black: #2f4858;
+    --white: #e5d0e3;
 }
 
 
@@ -15,3 +19,47 @@
 }
 
 /* add your own style rules here */
+
+header {
+    padding: 20px;
+    text-align: center;
+    background: var(--yellow);
+    color: var(--black);
+    font-size: 20px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-position: top;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Oswald", serif;
+    font-size: 125px;
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
