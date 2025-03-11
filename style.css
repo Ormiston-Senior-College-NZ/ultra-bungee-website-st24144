@@ -3,8 +3,7 @@
 
 /* site colour palette */
 :root {
-    --blue: #8acdea;
-    --red: #e63946;
+    --blue: #8acdeabb;
     --yellow: #fcf300;
     --black: #2f4858;
     --white: #e5d0e3;
@@ -49,7 +48,6 @@ header a {
 }
 
 footer {
-    margin-top: 35px;
     padding: 20px;
     text-align: center;
     background: var(--yellow);
@@ -60,7 +58,8 @@ footer {
 .image-container {
     position: relative;
     display: inline-block;
-    padding-bottom: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .image-container img {
@@ -70,7 +69,7 @@ footer {
     object-position: top;
 }
 
-.overlay-text {
+.overlay-title {
     position: absolute;
     top: 55%;
     left: 50%;
@@ -99,8 +98,8 @@ footer {
     font-size: 25px;
 }
 
-.activites h2 {
-    padding: 15px;
+.activities h2 {
+    padding: 25px;
 }
 
 .slideshow-container {
@@ -193,7 +192,30 @@ footer {
 }
 
 /* css for bridge jump page */
+.overlay-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+    color: var(--black);
+    background-color: var(--white);
+    outline: 4px solid;
+    width: 40%;
+}
+
 .bridge-information {
     padding: 20px;
+    background-color: var(--blue);
+}
 
+.bridge-information h2 {
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.bridge-information p {
+    font-size: 20px;
+    padding-top: 10px;
 }
