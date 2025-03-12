@@ -191,7 +191,7 @@ footer {
     to {opacity: 1}
 }
 
-/* css for bridge jump page */
+/* css for other jump pages */
 .overlay-text {
     position: absolute;
     top: 80%;
@@ -205,17 +205,39 @@ footer {
     width: 40%;
 }
 
-.bridge-information {
+.jump-information {
     padding: 20px;
     background-color: var(--blue);
 }
 
-.bridge-information h2 {
+.jump-information h2 {
     font-size: 35px;
     text-decoration: underline;
 }
 
-.bridge-information p {
+.jump-information p {
     font-size: 20px;
     padding-top: 10px;
 }
+
+.jump-information button {
+    background-color: var(--white);
+    border: 5px solid;
+    color: var(--black);
+    padding: 16px 16px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 40px;
+    box-shadow: 0 3px var(--black);
+  }
+
+  .jump-information button:hover {background-color: var(--yellow)}
+
+  .jump-information button:active {
+    background-color: var(--white);
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+  }
