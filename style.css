@@ -203,11 +203,11 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 25px;
+    font-size: 1em;
     color: var(--black);
     background-color: var(--white);
     outline: 4px solid;
-    width: 40%;
+    width: 50%;
 }
 
 .jump-information {
@@ -298,6 +298,10 @@ footer {
         padding: 0px 2%;
     }
 
+    .down {
+        scale: 3;
+    }
+
     .slideshow-container {
         max-width: 90vw;
     }
@@ -327,6 +331,57 @@ footer {
 
     footer {
         font-size: 1.2em;
+    }
+
+    .activities {
+        font-size: 1.2em;
+    }
+}
+
+/* media query for 480px */
+@media (max-width: 480px) {
+    header img {
+        height: 4vh;
+    }
+
+    header li {
+        font-size: 0.7rem;
+        padding: 0px 1%;
+    }
+
+    .down {
+        scale: 2;   
+    }
+
+    .slideshow-container {
+        max-width: 70vw;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .gallery-container {
+        gap: 15px;
+    }
+
+    .gallery {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .overlay-title {
+        font-size: 2em;
+    }
+
+    .overlay-text {
+        width: 80%;
+        font-size: 0.4em;
+    }
+
+    footer {
+        font-size: 1em;
     }
 
     .activities {
