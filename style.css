@@ -27,30 +27,29 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 99;
     padding: 20px;
     text-align: center;
     background: var(--yellow);
     color: var(--black);
-    font-size: 20px;
 }
 
 header img {
-    width: 20vh;
-    height: auto;
+    width: auto;
+    height: 5vh;
 }
 
 header li {
     display: inline-block;
     color: var(--black);
-    font-size: 20px;
-    padding: 0px 25px;
+    font-size: 1.5rem;
+    padding: 0px 1%;
 }
 
 header a {
     text-decoration: none;
-    color: var(--black)
+    color: var(--black);
 }
 
 footer {
@@ -58,19 +57,19 @@ footer {
     text-align: center;
     background: var(--yellow);
     color: var(--black);
-    font-size: 20px;
+    font-size: 1.5em;
 }
 
 .image-container {
     position: relative;
     display: inline-block;
-    width: 100%;
+    width: 100vw;
     height: auto;
 }
 
 .image-container img {
     display: block;
-    width: 100%;
+    width: 100vw;
     height: auto;
     object-position: top;
 }
@@ -81,7 +80,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 90px;
+    font-size: 5em;
     color: var(--yellow);
     font-weight: bold;
 }
@@ -98,10 +97,10 @@ footer {
     -webkit-transform: rotate(45deg);
     scale: 5;
 }
-  
+
 .activities {
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5em;
 }
 
 .activities h2 {
@@ -109,7 +108,7 @@ footer {
 }
 
 .slideshow-container {
-    max-width: 1300px;
+    max-width: 60vw;
     position: relative;
     margin: auto;
 }
@@ -127,7 +126,7 @@ footer {
     padding: 16px;
     color: var(--white);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1em;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -166,7 +165,7 @@ footer {
 
 .numbertext {
     color: var(--white);
-    font-size: 15px;
+    font-size: 1em;
     padding: 8px 12px;
     position: absolute;
     top: 0;
@@ -174,8 +173,8 @@ footer {
 
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 1em;
+    width: 1em;
     margin: 0 2px;
     background-color: var(--black);
     border-radius: 50%;
@@ -286,4 +285,51 @@ footer {
 .gallery .desc{
     padding: 15px;
     text-align: center;
+}
+
+/* media query for 720px */
+@media (max-width: 720px) {
+    header img {
+        height: 4vh;
+    }
+
+    header li {
+        font-size: 1.2rem;
+        padding: 0px 2%;
+    }
+
+    .slideshow-container {
+        max-width: 90vw;
+    }
+
+    .button {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .gallery-container {
+        gap: 20px;
+    }
+
+    .gallery {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .overlay-title {
+        font-size: 3.5em;
+    }
+
+    .overlay-text {
+        width: 80%;
+        font-size: 0.6em;
+    }
+
+    footer {
+        font-size: 1.2em;
+    }
+
+    .activities {
+        font-size: 1.2em;
+    }
 }
